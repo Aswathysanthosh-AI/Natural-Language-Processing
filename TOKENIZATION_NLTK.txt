@@ -1,0 +1,11 @@
+#Word tokenization
+from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
+text="Simran is a beautiful girl who listens to her heart. She is a person who loves to socialise with people."
+word_tokenize(text)
+
+#Sentence tokenization
+from nltk.tokenize import sent_tokenize
+text="Hello my name is Ananthu. I am living in USA. I am working as a Business Intelligence analyst at Amazon. "
+sent_tokenize(text)

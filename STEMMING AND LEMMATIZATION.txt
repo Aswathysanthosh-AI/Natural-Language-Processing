@@ -1,0 +1,22 @@
+#porter stemmer
+from nltk.stem import PorterStemmer
+ps=PorterStemmer()
+word=["farming","enjoying","cats","departure","mostly","voracious"]
+for i in word:
+  print(ps.stem(i))
+
+#Snowball stemmer
+import nltk
+snow = nltk.stem.SnowballStemmer("english")
+snow.stem('bikes')
+
+#Lemmatizer
+import nltk
+nltk.download('wordnet')
+import nltk
+lemma1 = nltk.wordnet.WordNetLemmatizer()
+lemma1.lemmatize('articles')
+lemma2 = nltk.wordnet.WordNetLemmatizer()
+lemma2.lemmatize('gives')
+lemma2.lemmatize('given')
+

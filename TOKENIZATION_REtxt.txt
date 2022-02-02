@@ -1,0 +1,10 @@
+import re
+#Word tokenization
+text="Today is a rainy day.Reena's mom says Hey! go out with an umbrella."
+tokens= re.findall("[\w']+", text)
+tokens
+
+#Sentence tokenization
+text="Self motivation is the best motivation in one's life. One needs to believe in his or her own talents and work hard to achieve the goal. Its alright, ups and downs are part of a life. The thing is that we should learn our strengths and weaknesses. "
+sentences = re.compile('[.!?] ').split(text)
+sentences
